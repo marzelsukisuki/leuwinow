@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,14 +11,19 @@
     <title>LeuwiNow</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- Additional CSS Files -->
-     <!-- <link rel="stylesheet" href="templates/assets\css\templatemo-villa-agency.css"> -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <!-- <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/animate.css">  -->
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/fontawesome.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/templatemo-villa-agency.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/owl.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/animate.css' %}" rel="stylesheet">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 <!--
 
@@ -101,8 +107,8 @@ https://templatemo.com/tm-591-villa-agency
       <div class="row">
         <div class="col-lg-4">
           <div class="left-image">
-            <img src="assets/images/featured.jpg" alt="">
-            <a href="property-details.html"><img src="assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a>
+            <img src="static/assets/images/featured.jpg" alt="">
+            <a href="property-details.html"><img src="static/assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a>
           </div>
         </div>
         <div class="col-lg-5">
@@ -168,11 +174,11 @@ https://templatemo.com/tm-591-villa-agency
           <div class="info-table" style="display: flex; flex-direction: column; align-items: center;">
             <ul style="list-style-type: none; padding: 0;">
               <li style="text-align: center; margin-bottom: 20px;">
-                <img src="assets/images/info-icon-02.png" alt="" style="max-width: 52px;">
+                <img src="static/assets/images/info-icon-02.png" alt="" style="max-width: 52px;">
                 <h4>Reservasi<br><span>Mudah</span></h4>
               </li>
               <li style="text-align: center;">
-                <img src="assets/images/info-icon-03.png" alt="" style="max-width: 52px;">
+                <img src="static/assets/images/info-icon-03.png" alt="" style="max-width: 52px;">
                 <h4>Pembayaran<br><span>Aman dan cepat</span></h4>
               </li>
             </ul>
@@ -203,7 +209,7 @@ https://templatemo.com/tm-591-villa-agency
       <div class="row">
         <div class="col-lg-10 offset-lg-1">
           <div class="video-frame">
-            <img src="assets/images/video-frame.jpg" alt="">
+            <img src="static/assets/images/video-frame.jpg" alt="">
             <a href="https://youtu.be/TucK7M62NLo?si=MUp-tOnvGdoojXwT" target="_blank"><i class="fa fa-play"></i></a>
           </div>
         </div>
@@ -258,7 +264,7 @@ https://templatemo.com/tm-591-villa-agency
       <div class="row properties-box">
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
           <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-01.jpg" alt=""></a>
+            <a href="property-details.html"><img src="static/assets/images/property-01.jpg" alt=""></a>
             <span class="category">Penginapan</span>
             <h6>Rp2.264.000</h6>
             
@@ -270,7 +276,7 @@ https://templatemo.com/tm-591-villa-agency
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
           <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-02.jpg" alt=""></a>
+            <a href="property-details.html"><img src="static/assets/images/property-02.jpg" alt=""></a>
             <span class="category">Wisata Alam</span>
             <h6>Rp1.180.000</h6>
             <h4><a href="property-details.html">TIket Rekreasi 2 Orang ke Taman Wisata Matahari</a></h4>
@@ -282,7 +288,7 @@ https://templatemo.com/tm-591-villa-agency
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv rac">
           <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-03.jpg" alt=""></a>
+            <a href="property-details.html"><img src="static/assets/images/property-03.jpg" alt=""></a>
             <span class="category">Termasuk Penginapan</span>
             <h6>Rp1.460.000</h6>
             <h4><a href="property-details.html">Full Trip Desa Leuwimalang (2 Malam di Puncak Raya Hotel, Free Produk Olahan UMKM)</a></h4>
@@ -294,7 +300,7 @@ https://templatemo.com/tm-591-villa-agency
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
           <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-04.jpg" alt=""></a>
+            <a href="property-details.html"><img src="static/assets/images/property-04.jpg" alt=""></a>
             <span class="category">Wisata Alam</span>
             <h6>Rp584.500</h6>
             <h4><a href="property-details.html">2 Hari WIsata Kebun Teh Gunung Mas</a></h4>
@@ -306,7 +312,7 @@ https://templatemo.com/tm-591-villa-agency
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac str">
           <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-05.jpg" alt=""></a>
+            <a href="property-details.html"><img src="static/assets/images/property-05.jpg" alt=""></a>
             <span class="category">Wisata Alam</span>
             <h6>RP925.600</h6>
             <h4><a href="property-details.html">Paket 8 Orang ke Curug Cilember</a></h4>
@@ -318,7 +324,7 @@ https://templatemo.com/tm-591-villa-agency
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
           <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-06.jpg" alt=""></a>
+            <a href="property-details.html"><img src="static/assets/images/property-06.jpg" alt=""></a>
             <span class="category">Termasuk Penginapan</span>
             <h6>Rp450.000</h6>
             <h4><a href="property-details.html">Wisata Kebun teh + 1 Malam di Taman Teratai Hotel</a></h4>
@@ -399,12 +405,12 @@ https://templatemo.com/tm-591-villa-agency
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/counter.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="static/assets/js/isotope.min.js"></script>
+  <script src="static/assets/js/owl-carousel.js"></script>
+  <script src="static/assets/js/counter.js"></script>
+  <script src="static/assets/js/custom.js"></script>
 
   </body>
 </html>
