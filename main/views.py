@@ -17,3 +17,9 @@ def customer_reviews(request):
         review.stars = '★' * review.rating + '☆' * (5 - review.rating)
 
     return render(request, 'reviews/customer_reviews.html', {'reviews': reviews})
+
+def show_login(request):
+    return render(request, 'login.html')
+
+def show_signup(request):
+    return render(request, 'signup.html')
